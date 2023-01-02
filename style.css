@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: brown;
+
+
+}
+
+#grid {
+    display: grid;
+    width: 40%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 2rem
+}
+
+header {
+    grid-column: 1/5;
+}
+
+#film-selection {
+    grid-column: 1/5;
+    display: inline;
+}
+
+
+
+.film-selection {
+    display: block;
+}
+
+#movies{grid-column: 1/5;}
+
+h2 {
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+
+img {
+    width: 100%
+}
