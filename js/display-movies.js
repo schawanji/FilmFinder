@@ -21,6 +21,9 @@ const getSelectedValue = () => {
 
 const displayMovies = (movieTitle, movieOverview, moviePoster, movieId) => {
     const displayyedMovieElement = document.getElementById('movies');
+
+    const movieElement = document.createElement('div');
+    movieElement.setAttribute('class','movieElement')
     const movieTitleElement = document.createElement('h2');
     movieTitleElement.innerHTML = movieTitle;
     const movieOverviewElement = document.createElement('p');
@@ -29,8 +32,8 @@ const displayMovies = (movieTitle, movieOverview, moviePoster, movieId) => {
 
     moviePosterElement.setAttribute('src', `https://image.tmdb.org/t/p/original${moviePoster}`)
     moviePosterElement.setAttribute('id', movieId)
-
-    displayyedMovieElement.append(movieTitleElement, movieOverviewElement, moviePosterElement)
+    movieElement.append(movieTitleElement, movieOverviewElement, moviePosterElement)
+    displayyedMovieElement.append(movieElement)
 
 
 }

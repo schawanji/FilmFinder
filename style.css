@@ -4,13 +4,14 @@
 
 body {
     background-color: brown;
+    text-align: center;
 
 
 }
 
-#grid {
+#grid{
     display: grid;
-    width: 40%;
+    width: 20%;
     margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -20,7 +21,9 @@ body {
 
 header {
     grid-column: 1/5;
+    background-color: antiquewhite;
 }
+
 
 #film-selection {
     grid-column: 1/5;
@@ -33,7 +36,8 @@ header {
     display: block;
 }
 
-#movies{grid-column: 1/5;}
+#movies{grid-column: 1/5;
+}
 
 h2 {
     color: aliceblue;
